@@ -84,7 +84,7 @@ createSupplyDemandZones(timeframe) =>
 
     [open_HT, high_HT, low_HT, close_HT] = request.security(syminfo.tickerid, timeframe, [open[1], high[1], low[1], close[1]], lookahead = barmerge.lookahead_on)
 
-    var timeframeFormatted = switch timeframe
+    timeframeFormatted = switch timeframe
         '1' => '1m'
         '3' => '3m'
         '5' => '5m'
